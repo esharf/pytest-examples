@@ -52,6 +52,9 @@ def teardown_function():
     del SETUP_FUNCTION
 
 
+'''Setup and tear down a class'''
+
+
 class TestWithClassSetupAndTeardon:
     @classmethod
     def setup_class(cls):
@@ -69,6 +72,9 @@ class TestWithClassSetupAndTeardon:
     def test_ends_with_world(self):
         with open(self.my_temp_file, 'r') as test_file:
             assert test_file.read().endswith('world')
+
+
+'''Setup and tear down for each function in a class'''
 
 
 class TestWithSetupAndTearDownForEachTest:
