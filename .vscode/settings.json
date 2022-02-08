@@ -1,6 +1,7 @@
 {
     "python.testing.pytestArgs": [
-        "examples"
+        "examples",
+        "-m not dont_run_this_test or force_run_this_test"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
