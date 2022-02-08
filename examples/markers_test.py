@@ -22,11 +22,6 @@ def test_skip():
     raise Exception('this test is skipped for some reason')
 
 
-@pytest.mark.skipif(True, reason='this test because of the condition.')
-def test_conditional_skip():
-    raise Exception('this test because of the condition.')
-
-
 '''Using your own marker'''
 
 
