@@ -1,6 +1,6 @@
 import pytest
 
-
+'''See also examples/markers_test.py about markers'''
 '''You can skip the whole module (comment this to see the other skip types)'''
 pytest.skip("skipping test_skip_module_x tests", allow_module_level=True)
 

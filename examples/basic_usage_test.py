@@ -12,7 +12,7 @@ def test_add():
     assert 5 == add(2, 3)
 
 
-@pytest.mark.xfail      # will be explained in examples/markers_test.py
+@pytest.mark.xfail      # explained in examples/markers_test.py
 def test_fail():
     assert 5 == add(3, 3)
 

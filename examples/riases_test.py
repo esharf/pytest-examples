@@ -17,7 +17,7 @@ def test_raise_with_message_match():
         raise ChildException('this test should raise a specific exception.')
 
 
-@pytest.mark.xfail
+@pytest.mark.xfail      # explained in examples/markers_test.py
 def test_fail_with_unraised_exception():
     with pytest.raises(ParentException, match='this.+specific.+'):
         pass
