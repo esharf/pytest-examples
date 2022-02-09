@@ -1,0 +1,18 @@
+name: run pytest
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: python:latest
+
+    steps:
+      - uses: actions/checkout@v2			
+      - name: install pipenv
+        run: "pip install pipenv"
+      - name: install python dependence
+        run: "pipenv sync"
+      - name: run pytest
+        run: pipenv run pytest examples -m "not dont_run_this_test or force_run_this_test"
