@@ -1,7 +1,7 @@
-'''Setup and tear down a module'''
-
-
 from pathlib import Path
+
+
+'''Setup and tear down a module'''
 
 
 def setup_module(module):

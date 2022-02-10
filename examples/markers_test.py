@@ -1,5 +1,5 @@
 import pytest
-from some_functions import add
+from src_files.some_functions import add
 
 
 '''Use a marker'''

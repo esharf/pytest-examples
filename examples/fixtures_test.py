@@ -1,8 +1,6 @@
 import json
-from pathlib import Path
-from some_functions import add
+from src_files.some_functions import add
 import pytest
-import platform
 
 
 '''Using a fixture'''

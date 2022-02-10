@@ -1,4 +1,4 @@
-from some_functions import hello_world, add
+from src_files.some_functions import hello_world, add
 import pytest
 
 '''Basic examples'''
