@@ -38,6 +38,12 @@ def test_force_run_this_test():
     print('this test is running')
 
 
+'''
+You can also use custom arguments in your marker.
+check the pytest_runtest_setup and pytest_runtest_teardown function in conftest.py file.
+'''
+
+
 @pytest.mark.run_in('../')
 def test_open_file_with_parent_dir_path():
     from pathlib import Path
