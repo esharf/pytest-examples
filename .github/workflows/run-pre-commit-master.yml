@@ -1,0 +1,21 @@
+name: run pre-commit on master
+
+on:
+  push:
+    branches: master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: python:latest
+
+    steps:
+      - uses: actions/checkout@v2			
+      - name: install pipenv
+        run: "pip install pipenv"
+      - name: install python dependence
+        run: "pipenv sync --dev"
+      - name: run pytest
+        run: pipenv run pre-commit run -a
