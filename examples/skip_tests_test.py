@@ -9,7 +9,7 @@ pytest.skip("skipping test_skip_module_x tests", allow_module_level=True)
 
 
 @pytest.mark.skip
-def test_conditional_skip():
+def test_skip():
     raise Exception('this test is skipped')
 
 
@@ -22,7 +22,7 @@ skip = pytest.mark.skipif(True, reason='this test because of the condition.')
 
 
 @skip
-def test_skip():
+def test_skip_decorator():
     raise Exception('this test because of the @skip decorator.')
 
 

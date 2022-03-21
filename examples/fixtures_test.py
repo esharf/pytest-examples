@@ -1,7 +1,6 @@
 import json
-from src_files.some_functions import add
-import pytest
 
+import pytest
 
 '''Using a fixture'''
 

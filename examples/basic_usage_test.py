@@ -1,5 +1,6 @@
-from src_files.some_functions import hello_world, add
 import pytest
+
+from src_files.some_functions import add, hello_world
 
 '''Basic examples'''
 

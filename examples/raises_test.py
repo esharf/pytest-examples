@@ -1,5 +1,6 @@
 import pytest
-from src_files.some_exceptions import ParentException, ChildException
+
+from src_files.some_exceptions import ChildException, ParentException
 
 
 def test_raise():

@@ -1,6 +1,5 @@
 from pathlib import Path
 
-
 '''Setup and tear down a module'''
 
 
@@ -37,17 +36,17 @@ def teardown_function():
     del SETUP_FUNCTION
 
 
-def setup_function():
+def setup_function():   # type: ignore[no-redef] # noqa: F811
     global SETUP_FUNCTION
     SETUP_FUNCTION = 'SETUP_FUNCTION_2'
 
 
-def test_setup_function_1():
+def test_setup_function_2():
     global SETUP_FUNCTION
     assert SETUP_FUNCTION == 'SETUP_FUNCTION_2'
 
 
-def teardown_function():
+def teardown_function():    # type: ignore[no-redef] # noqa: F811
     global SETUP_FUNCTION
     del SETUP_FUNCTION
 

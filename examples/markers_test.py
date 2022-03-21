@@ -1,6 +1,6 @@
 import pytest
-from src_files.some_functions import add
 
+from src_files.some_functions import add
 
 '''Use a marker'''
 
@@ -40,7 +40,10 @@ def test_force_run_this_test():
 
 '''
 You can also use custom arguments in your marker.
-check the pytest_runtest_setup and pytest_runtest_teardown function in conftest.py file.
+check the
+- pytest_runtest_setup
+- pytest_runtest_teardown
+functions in conftest.py file.
 '''
 
 
