@@ -42,3 +42,21 @@ def test_with_your_fixture(create_json_file):
     with open(create_json_file, 'r') as json_file:
         data = json.load(json_file)
     assert data['test'] == 'test'
+
+    
+'''Using your own fixture with yield'''
+
+
+class MyYieldedClass:
+    def __init__(self, some_value):
+        self.some_value = some_value
+
+
+@pytest.fixture
+def my_yielded_class():
+    yield MyYieldedClass('this is some yielded value')
+    print('this print will be executed after the test is done')
+
+
+def test_some_yielded_value(my_yielded_class):
+    assert my_yielded_class.some_value == 'this is some yielded value'
