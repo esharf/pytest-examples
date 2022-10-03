@@ -43,7 +43,7 @@ def test_with_your_fixture(create_json_file):
         data = json.load(json_file)
     assert data['test'] == 'test'
 
-    
+
 '''Using your own fixture with yield'''
 
 
